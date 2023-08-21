@@ -1,3 +1,4 @@
+package exe4;
 public class TestaRio {
     public static void main(String[] args) {
         Rio rio = new Rio();

@@ -1,3 +1,4 @@
+package exe4;
 public class Rio {
     public String nome;
     public float nivel;

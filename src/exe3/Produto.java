@@ -1,3 +1,4 @@
+package exe3;
 public class Produto {
 
     // Java é tipado, variáveis possuem tipo de dados

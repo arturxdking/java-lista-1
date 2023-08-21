@@ -1,3 +1,4 @@
+package exe2;
 public class TestaCliente {
     public static void main(String[] args) {
         Cliente obj1 = new Cliente(378478, 7364,"Fulando", 10f);
