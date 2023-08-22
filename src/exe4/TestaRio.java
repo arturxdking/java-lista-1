@@ -1,26 +1,26 @@
 package exe4;
+
 public class TestaRio {
     public static void main(String[] args) {
-        Rio rio = new Rio();
-        rio.nivel = 10;
-        rio.nome = "Solimões";
-        rio.poluido = false;
-        rio.chover(30f);
-        System.out.println(rio.mostra());
 
-        if (rio.ensolarar(23f) == false) {
-            System.out.println("O Rio " + rio.nome + " secou!");
+        Rio obj1 = new Rio("Soliões",10f, false);
+
+        obj1.chover(30f);
+        System.out.println(obj1.mostra());
+
+        if (obj1.ensolarar(23f) == false) {
+            System.out.println("O Rio " + obj1.nome + " secou!");
         }
-        System.out.println(rio.mostra());
+        System.out.println(obj1.mostra());
 
-        Rio riob = new Rio("Negro", 2, true);
-        riob.chover(34f);
-        System.out.println(riob.mostra());
+        Rio obj2 = new Rio("Negro", 2, true);
+        obj2.chover(34f);
+        System.out.println(obj2.mostra());
 
-        if (riob.ensolarar(70f) == false) {
-            System.out.println("O Rio " + riob.nome + " secou!");
+        if (obj2.ensolarar(70f) == false) {
+            System.out.println("O Rio " + obj2.nome + " secou!");
         }
-        riob.poluido = true;
-        System.out.println(riob.mostra());
+        obj2.poluido = true;
+        System.out.println(obj2.mostra());
     }
 }
